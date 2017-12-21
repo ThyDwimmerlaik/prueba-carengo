@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Prueba Carengo</title>
+  <meta name="description" content="Prueba Carengo de webapp">
+  <meta name="author" content="Daniel Zurita">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="loadFeed(0)">
+  <div class="header">
+    <h2>Prueba Técnica de webservice y webapp</h2>
+  </div>
+  <div class="content">
+    <h3 id="item-counter"></h3>
+    <div id="items-container">
+      <script id="item-template" type="x-tmpl-mustache">
+        <div class="items">
+          <div class="item-title"><h4>{{titulo}}</h4></div>
+          <div class="item-body">
+            <img src="{{imagen}}">
+            <span>$ {{precio}}</span>
+            <p>{{descripcion}}</p>
+          </div>
+        </div>
+      </script>
+    </div>
+    <div id="bottom-page"></div>
+  </div>
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
